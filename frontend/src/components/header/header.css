@@ -1,0 +1,26 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: rgb(217, 220, 223);
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.logo-img {
+  width: 6.5vh;
+  height: auto;
+  margin-left: 29px;
+}
+
+.titles {
+  display: flex;
+  width: 70%;
+  font-weight: lighter;
+  margin-top: 25px;
+  justify-content: space-evenly;
+  padding-bottom: 3.5vh;
+  font-size: 0.7vh;
+}
