@@ -1,0 +1,10 @@
+.selected-work-container {
+  padding: 10vh 5vh;
+}
+
+.img-selected-project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
