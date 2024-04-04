@@ -1,0 +1,24 @@
+.button-view-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-view {
+  background-color: rgb(255, 64, 0);
+  width: 38%;
+  font-size: 18px;
+  border-radius: 15px;
+  font-family: var(--police-general);
+  padding: 10px 0;
+}
+
+.img-about-home {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.img-home {
+  width: 80%;
+}

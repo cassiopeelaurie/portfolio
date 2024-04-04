@@ -1,0 +1,34 @@
+body {
+  font-family: var(--police-general);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  background-color: var(--second-background-color);
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.logo-img {
+  width: 6.8vh;
+  height: auto;
+  margin-left: 45px;
+}
+
+.titles {
+  display: flex;
+  width: 70%;
+  font-weight: lighter;
+  margin-top: 25px;
+  justify-content: space-evenly;
+  padding-bottom: 3.8vh;
+  font-size: 0.6vh;
+}
+
+h1 {
+  font-weight: normal;
+}
