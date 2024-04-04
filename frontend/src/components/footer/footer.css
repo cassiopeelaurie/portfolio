@@ -13,14 +13,14 @@
 }
 
 .contacts {
-  font-family: var(--police-header);
+  font-family: var(--police-general);
   font-size: 20px;
 }
 
 .name {
   margin-top: 10px;
   margin-bottom: 50px;
-  font-family: var(--police-header);
+  font-family: var(--police-general);
   font-weight: normal;
   font-size: 30px;
 }
