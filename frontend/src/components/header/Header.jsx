@@ -1,4 +1,5 @@
 import React from "react";
+import "../../App.css";
 import "./header.css";
 import Logo from "../../assets/logo.png";
 

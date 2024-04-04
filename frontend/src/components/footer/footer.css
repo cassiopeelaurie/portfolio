@@ -1,31 +1,44 @@
 .footer-container {
   border-top: 2px solid black;
-  position: fixed;
-  background-color: rgb(255, 157, 0);
+  position: absolute;
+  background-color: var(--main-background-color);
   width: 100%;
-  height: 51vh;
+  height: 55vh;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 40px;
 }
 
 .logo-img-footer {
-  width: 12vh;
+  width: 5vh;
 }
 
 .contacts {
-  font-family: cursive;
+  font-family: var(--police-header);
   font-size: 20px;
 }
 
 .name {
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 50px;
+  font-family: var(--police-header);
+  font-weight: normal;
+  font-size: 30px;
 }
 
 p {
-  margin-top: -20px;
+  margin-top: -1.8rem;
+  font-size: 22px;
 }
 
 .qr-code-github {
-  width: 20%;
+  display: flex;
+  object-fit: fill;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+img {
+  width: 30%;
 }

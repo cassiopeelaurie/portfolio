@@ -1,13 +1,18 @@
 import React from "react";
 import "./footer.css";
 import Logo from "../../assets/logo.png";
-import FlashCode from "../../assets/qr-code.png";
+import FlashCode from "../../assets/code.png";
 
 export default function Footer() {
   return (
     <div className="footer-container">
       <div className="logo">
-        <img className="logo-img-footer" src={Logo} alt="logo"></img>
+        <img
+          className="logo-img-footer"
+          src={Logo}
+          alt="logo"
+          style={{ width: "20%" }}
+        ></img>
       </div>
       <h2 className="name">Cassiopée Laurie</h2>
       <div className="contacts">

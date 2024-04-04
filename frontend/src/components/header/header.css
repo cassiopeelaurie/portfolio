@@ -1,8 +1,12 @@
+body {
+  font-family: var(--police-header);
+}
+
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
+  position: absolute;
   background-color: rgb(217, 220, 223);
   width: 100%;
   top: 0;
@@ -10,9 +14,9 @@
 }
 
 .logo-img {
-  width: 6.5vh;
+  width: 6.8vh;
   height: auto;
-  margin-left: 40px;
+  margin-left: 45px;
 }
 
 .titles {
@@ -21,6 +25,10 @@
   font-weight: lighter;
   margin-top: 25px;
   justify-content: space-evenly;
-  padding-bottom: 3.5vh;
+  padding-bottom: 3.8vh;
   font-size: 0.6vh;
+}
+
+h1 {
+  font-weight: normal;
 }

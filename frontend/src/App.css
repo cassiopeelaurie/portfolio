@@ -1,3 +1,5 @@
-body {
-  font-family: "Times New Roman", Times, serif;
+:root {
+  --police-header: "Inika", sans-serif;
+  --police-paragraphe: "Playfair", sans-serif;
+  --main-background-color: rgb(255, 157, 0);
 }
