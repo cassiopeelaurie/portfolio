@@ -4,7 +4,7 @@ body {
 .about-home-container {
   width: 100%;
   justify-content: center;
-  padding: 10vh 0 5vh 0;
+  padding: 15vh 0 5vh 0;
   background-color: var(--main-background-color);
 }
 

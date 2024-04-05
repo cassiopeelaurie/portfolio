@@ -5,7 +5,7 @@ import Learn from "../../assets/learn-home.jpg";
 export default function SelectedWork() {
   return (
     <div className="selected-work-container">
-      <h1 className="title-about-home">Selected Work</h1>
+      <h1 className="title-about-project">Selected Work</h1>
       <div className="img-selected-project">
         <img className="img-project" src={Learn} alt="project" />
       </div>
