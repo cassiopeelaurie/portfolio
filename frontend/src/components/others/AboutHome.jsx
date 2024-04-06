@@ -1,9 +1,16 @@
 import React from "react";
 import Learn from "../../assets/learn-home.jpg";
 import ViewButton from "../buttons/ViewButton";
+import { useNavigate } from "react-router-dom";
 import "./aboutHome.css";
 
 export default function AboutHome() {
+  const navigate = useNavigate();
+
+  const handleButtonProfileClick = () => {
+    navigate("/about-me");
+  };
+
   return (
     <div className="about-home-container">
       <h1 className="title-about-home">Web Développeuse</h1>
@@ -13,7 +20,10 @@ export default function AboutHome() {
         Formation dans laquelle j'ai pu découvrir Javascript et son framework
         React. Ainsi que d'autres technologies...
       </p>
-      <ViewButton buttonName="View Profile" />
+      <ViewButton
+        buttonName="View Profile"
+        onClick={handleButtonProfileClick}
+      />
       <div className="img-about-home">
         <img className="img-home" src={Learn} alt="logo" />
       </div>
