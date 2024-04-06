@@ -9,7 +9,7 @@
 }
 
 .logo-img-footer {
-  width: 5vh;
+  width: 10vh;
 }
 
 .contacts {
@@ -41,4 +41,9 @@ p {
 
 img {
   width: 30%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
