@@ -1,4 +1,5 @@
 import React from "react";
+import "./learnAboutMe.css";
 import AboutCards from "../components/cards/AboutCards";
 
 export default function LearnAboutMe() {

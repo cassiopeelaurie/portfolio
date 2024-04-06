@@ -1,9 +1,8 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-import Home from "./pages/Home.jsx";
+import ReactDOM from "react-dom";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.jsx";
-import "./index.css";
+import Home from "./pages/Home.jsx";
 import AllProjects from "./pages/AllProjects.jsx";
 import LearnAboutMe from "./pages/LearnAboutMe.jsx";
 
@@ -28,10 +27,11 @@ const router = createBrowserRouter([
   },
 ]);
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-
-root.render(
+ReactDOM.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
+    <RouterProvider router={router}>
+      <App />
+    </RouterProvider>
+  </React.StrictMode>,
+  document.getElementById("root")
 );
