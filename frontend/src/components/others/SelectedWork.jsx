@@ -10,10 +10,11 @@ export default function SelectedWork() {
       <div className="img-selected-project">
         <img className="img-project" src={Learn} alt="project" />
       </div>
-      <h3 className="title-selected-project">Title</h3>
+      <h3 className="title-selected-project">GreenPoint</h3>
       <p className="description-selected-project">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-        pariatur dolorum? Cum nihil amet recusandae quas sunt fuga...
+        Vous êtes soucieux de l'environnement ? Vous souhaitez connaître votre
+        empreinte carbone et souhaitez vous améliorer ? GreenPoint est fait pour
+        vous ! Grace à une API externe, nous pouvons la calculer pour vous...
       </p>
       <ViewButton buttonName="View Project" />
     </div>

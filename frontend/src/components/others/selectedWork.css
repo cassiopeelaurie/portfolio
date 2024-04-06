@@ -1,12 +1,18 @@
 .selected-work-container {
   background-color: var(--second-background-color);
+  margin-top: -40px;
+  padding-bottom: 7vh;
 }
 
-.title-about-home {
-  display: flex;
-  font-size: 30px;
+.title-about-project {
+  width: 100%;
   justify-content: center;
+  font-size: 37px;
+  display: flex;
+  padding-top: 35px;
+  font-weight: normal;
 }
+
 .img-selected-project {
   display: flex;
   justify-content: center;
@@ -14,6 +20,28 @@
   width: 100%;
 }
 
+.img-selected-project {
+  width: 100%;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
 .img-project {
-  width: 50%;
+  width: 80%;
+}
+
+.title-selected-project {
+  width: 100%;
+  justify-content: center;
+  font-size: 27px;
+}
+.description-selected-project {
+  font-size: 18px;
+  padding: 22px 72px;
+  text-align: justify;
+  margin-bottom: -30px;
+}
+
+h3 {
+  display: flex;
 }
