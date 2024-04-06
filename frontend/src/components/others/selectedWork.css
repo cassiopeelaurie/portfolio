@@ -1,5 +1,5 @@
 .selected-work-container {
-  padding: 10vh 5vh;
+  background-color: var(--second-background-color);
 }
 
 .title-about-home {

@@ -1,4 +1,5 @@
 import React from "react";
+import "./selectedWork.css";
 import ViewButton from "../buttons/ViewButton";
 import Learn from "../../assets/learn-home.jpg";
 
