@@ -28,3 +28,22 @@ body {
   padding-bottom: 3.8vh;
   font-size: 1vh;
 }
+
+@media screen and (min-width: 768px) {
+  .logo-img {
+    width: 7.5vh;
+    height: auto;
+    margin-left: 75px;
+  }
+
+  .titles {
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+    font-weight: lighter;
+    margin-top: 25px;
+    justify-content: space-evenly;
+    padding-bottom: 3.8vh;
+    font-size: 1.4vh;
+  }
+}
