@@ -29,3 +29,34 @@ body {
 h1 {
   display: flex;
 }
+
+@media screen and (min-width: 768px) {
+  .about-cards-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    margin: 30px 40px;
+    width: 90%;
+    background-color: rgb(247, 200, 200);
+    border-radius: 25px;
+  }
+
+  .text-about-home {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .img-about-home {
+    width: 100%;
+  }
+
+  .img-home {
+    flex: 1;
+  }
+
+  .name-cards {
+    font-family: var(--police-general);
+    font-size: 20px;
+  }
+}
