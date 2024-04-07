@@ -1,0 +1,13 @@
+.about-cards-container {
+  display: flex;
+  justify-content: center;
+  height: 24vh;
+  margin: 30px 55px;
+  width: 70%;
+  background-color: rgb(247, 200, 200);
+  border-radius: 25px;
+}
+.name-cards {
+  font-family: var(--police-general);
+  font-size: 20px;
+}
