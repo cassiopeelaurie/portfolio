@@ -45,3 +45,28 @@
 h3 {
   display: flex;
 }
+
+@media screen and (min-width: 768px) {
+  .selected-work-container {
+    height: 650px;
+  }
+  .title-about-project {
+    padding-top: 90px;
+  }
+  .div-responsive-selected-work {
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+  }
+  .button-project-responsive {
+    margin-left: 200px;
+    width: 140px;
+  }
+  .title-selected-project {
+    width: 85%;
+    padding-top: 50px;
+  }
+  .description-selected-project {
+    padding-right: 140px;
+  }
+}
