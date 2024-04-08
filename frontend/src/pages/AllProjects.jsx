@@ -6,10 +6,14 @@ export default function AllProjects() {
   return (
     <div className="all-projects-container">
       <h1 className="title-all-projects">All Projects</h1>
-      <ProjectsCards />
-      <ProjectsCards />
-      <ProjectsCards />
-      <ProjectsCards />
+      <div className="title-and-cards">
+        <div className="all-projects-cards">
+          <ProjectsCards />
+          <ProjectsCards />
+          <ProjectsCards />
+          <ProjectsCards />
+        </div>
+      </div>
     </div>
   );
 }
