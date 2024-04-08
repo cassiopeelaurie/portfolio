@@ -9,10 +9,12 @@ export default function Footer() {
       <h1 id="bottom" style={{ position: "absolute", left: "-9999px" }}>
         Pied de page
       </h1>
-      <div className="logo">
-        <img className="logo-img-footer" src={Logo} alt="logo"></img>
+      <div className="bloc-1">
+        <div className="logo">
+          <img className="logo-img-footer" src={Logo} alt="logo"></img>
+        </div>
+        <h2 className="name">Cassiopée Laurie</h2>
       </div>
-      <h2 className="name">Cassiopée Laurie</h2>
       <div className="contacts">
         <p>cassiopee.laurie@gmail.com</p>
         <p>07 69 70 62 98</p>
