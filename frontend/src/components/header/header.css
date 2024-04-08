@@ -35,6 +35,9 @@ body {
     height: auto;
     margin-left: 75px;
   }
+  .logo-img:hover {
+    cursor: pointer;
+  }
 
   .titles {
     display: flex;
@@ -45,5 +48,8 @@ body {
     justify-content: space-evenly;
     padding-bottom: 3.8vh;
     font-size: 1.4vh;
+  }
+  .titles:hover {
+    cursor: pointer;
   }
 }

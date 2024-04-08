@@ -31,32 +31,27 @@ h1 {
 }
 
 @media screen and (min-width: 768px) {
-  .about-cards-container {
+  .about-home-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: auto;
-    margin: 30px 40px;
+    padding-top: 25vh;
+    padding-bottom: 150px;
+  }
+  .div-desktop-responsive {
+    display: block;
     width: 90%;
-    background-color: rgb(247, 200, 200);
-    border-radius: 25px;
+    margin-left: 30px;
+    margin-top: 45px;
   }
-
-  .text-about-home {
-    flex: 1;
-    padding: 20px;
+  .title-about-home {
+    font-size: 47px;
   }
-
-  .img-about-home {
-    width: 100%;
+  .button-about-home-responsive {
+    margin-left: auto;
+    margin-top: -20px;
+    width: 400px;
   }
-
-  .img-home {
-    flex: 1;
-  }
-
-  .name-cards {
-    font-family: var(--police-general);
-    font-size: 20px;
+  .button-responsive-home-profil:hover {
+    color: white;
+    cursor: pointer;
   }
 }
