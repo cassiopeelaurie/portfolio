@@ -35,3 +35,46 @@
   width: 70%;
   height: 70%;
 }
+
+@media screen and (min-width: 768px) {
+  .div-responsive-about-me {
+    display: flex;
+    margin-top: 150px;
+  }
+  .name-header-container {
+    height: 80vh;
+  }
+  .name-header {
+    font-size: 80px;
+  }
+  .name-text {
+    display: flex;
+    height: 40vh;
+    padding-top: 140px;
+  }
+  .img-profile-page {
+    height: 80vh;
+    margin-top: -50px;
+  }
+  .img-pdp {
+    width: 60%;
+  }
+  .three-cards {
+    width: 60%;
+  }
+  .width-pages-des-cards {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .width-pages-des-cards .the-other-side-card {
+    margin-left: 350px;
+    height: 50vh;
+  }
+  .width-pages-des-cards .formation-card {
+    height: 50vh;
+  }
+  .width-pages-des-cards .outils-card {
+    height: 50vh;
+  }
+}
