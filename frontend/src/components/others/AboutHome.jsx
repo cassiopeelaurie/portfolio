@@ -13,17 +13,22 @@ export default function AboutHome() {
 
   return (
     <div className="about-home-container">
-      <h1 className="title-about-home">Web Développeuse</h1>
-      <p className="text-about-home">
-        Plongée dans l'univers du développement Web et Web Mobile depuis peu,
-        j'ai énormément appris à l'école Tech de la Wild Code School à Bordeaux.
-        Formation dans laquelle j'ai pu découvrir Javascript et son framework
-        React. Ainsi que d'autres technologies...
-      </p>
-      <ViewButton
-        buttonName="View Profile"
-        onClick={handleButtonProfileClick}
-      />
+      <div className="div-desktop-responsive">
+        <h1 className="title-about-home">Web Développeuse</h1>
+        <p className="text-about-home">
+          Plongée dans l'univers du développement Web et Web Mobile depuis peu,
+          j'ai énormément appris à l'école Tech de la Wild Code School à
+          Bordeaux. Formation dans laquelle j'ai pu découvrir Javascript et son
+          framework React. Ainsi que d'autres technologies...
+        </p>
+        <div className="button-about-home-responsive">
+          <ViewButton
+            className="button-responsive-home-profil"
+            buttonName="View Profile"
+            onClick={handleButtonProfileClick}
+          />
+        </div>
+      </div>
       <div className="img-about-home">
         <img className="img-home" src={Learn} alt="logo" />
       </div>
