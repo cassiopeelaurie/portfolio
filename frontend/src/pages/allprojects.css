@@ -9,3 +9,13 @@
   justify-content: center;
   font-size: 37px;
 }
+
+@media screen and (min-width: 765px) {
+  .all-projects-cards {
+    display: flex;
+    justify-content: center;
+  }
+  .all-projects-cards {
+    width: 100%;
+  }
+}
