@@ -14,7 +14,6 @@ app.use(
 app.use(express.json());
 
 const router = require("./router");
-
 app.use("/api", router);
 
 const reactBuildPath = path.join(__dirname, "/../../frontend/dist");
