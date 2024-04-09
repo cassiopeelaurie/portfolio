@@ -2,8 +2,9 @@ const express = require("express");
 
 const router = express.Router();
 
-//const userControllers = require("./controllers/userControllers");
+// const projectController = require("./controllers/projectController");
+const AbstractManager = require("./models/AbstractManager");
 
-//router.get("/users/:id([0-9]+)/cvs", authMiddleware, cvControllers.getCv);
+router.get("/project/:id([0-9]+)", AbstractManager.findId);
 
 module.exports = router;
