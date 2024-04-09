@@ -1,8 +1,9 @@
-const express = require('express');
+const express = require("express");
+require("dotenv").config();
 
 const app = express();
 
-const port = 5000;
+const port = process.env.APP_PORT;
 
 app
   .listen(port, () => {
@@ -11,5 +12,3 @@ app
   .on("error", (err) => {
     console.error("Error:", err.message);
   });
-
-  
