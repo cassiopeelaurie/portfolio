@@ -2,9 +2,8 @@ const express = require("express");
 
 const router = express.Router();
 
-// const projectController = require("./controllers/projectController");
-const AbstractManager = require("./models/AbstractManager");
+const projectController = require("./controllers/projectController");
 
-router.get("/project/:id([0-9]+)", AbstractManager.findId);
+router.get("/project/:name", projectController.getProjectByName);
 
 module.exports = router;
