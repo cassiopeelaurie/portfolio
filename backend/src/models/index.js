@@ -32,25 +32,10 @@ pool
 const models = {};
 const ProjectManager = require("./ProjectManager");
 
-models.user = new UserManager();
-models.offer = new OfferManager();
-models.experience = new ExperienceManager();
-models.course = new CourseManager();
-models.cv = new CvManager();
-models.upload = new UploadManager();
-models.userCompetence = new UserCompetenceManager();
-models.offerCompetence = new OfferCompetenceManager();
-models.competence = new CompetenceManager();
+models.project = new ProjectManager();
 
-models.user.setDatabase(pool);
-models.offer.setDatabase(pool);
-models.experience.setDatabase(pool);
-models.course.setDatabase(pool);
-models.cv.setDatabase(pool);
-models.userCompetence.setDatabase(pool);
-models.offerCompetence.setDatabase(pool);
-models.competence.setDatabase(pool);
-models.upload.setDatabase(pool);
+models.project.setDatabase(pool);
+
 // bonus: use a proxy to personalize error message,
 // when asking for a non existing model
 const handler = {
