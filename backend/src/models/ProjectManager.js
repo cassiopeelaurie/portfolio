@@ -15,3 +15,5 @@ class ProjectManager extends AbstractManager {
     );
   }
 }
+
+module.exports = ProjectManager;
