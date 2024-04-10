@@ -1,5 +1,5 @@
 // Import database client
-
+const database = require("../../database/client");
 // Provide database access through AbstractManager class
 class AbstractManager {
   constructor({ table }) {
@@ -7,6 +7,7 @@ class AbstractManager {
     this.table = table;
 
     // Provide access to the database client
+    this.database = database;
   }
 
   async findAll() {
