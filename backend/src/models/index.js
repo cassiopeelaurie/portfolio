@@ -31,10 +31,19 @@ pool
 
 const models = {};
 const ProjectManager = require("./projectManager");
+const FormationManager = require("./formationManager");
+const ToolManager = require("./toolManager");
+const HardSkillManager = require("./hardSkillManager");
 
 models.project = new ProjectManager();
+models.formation = new FormationManager();
+models.tool = new ToolManager();
+models.hard_skill = new HardSkillManager();
 
 models.project.setDatabase(pool);
+models.formation.setDatabase(pool);
+models.tool.setDatabase(pool);
+models.hard_skill.setDatabase(pool);
 
 // bonus: use a proxy to personalize error message,
 // when asking for a non existing model
