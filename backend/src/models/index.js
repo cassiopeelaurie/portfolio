@@ -30,7 +30,7 @@ pool
   });
 
 const models = {};
-const ProjectManager = require("./ProjectManager");
+const ProjectManager = require("./projectManager");
 
 models.project = new ProjectManager();
 
