@@ -1,19 +1,19 @@
 const AbstractManager = require("./AbstractManager");
 
-class FormationManager extends AbstractManager {
+class ToolManager extends AbstractManager {
   constructor() {
-    super({ table: "formation" });
+    super({ table: "tool" });
   }
 
-  getFormation(formation) {
+  getTool(tools) {
     return this.database.query(
       `
       SELECT * from ${this.table}
   
     `,
-      [formation]
+      [tools]
     );
   }
 }
 
-module.exports = FormationManager;
+module.exports = ToolManager;
