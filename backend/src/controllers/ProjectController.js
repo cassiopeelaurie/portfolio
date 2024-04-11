@@ -19,7 +19,7 @@ const getProjectByName = async (req, res) => {
     const projectName = req.params.name;
 
     // Utiliser le gestionnaire de données pour récupérer les informations du projet
-    const projectInfo = await models.projectManager.getProject(projectName);
+    const projectInfo = await models.project.getProject(projectName);
 
     const projectData = projectInfo[0];
 
