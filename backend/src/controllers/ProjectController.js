@@ -3,10 +3,10 @@ const models = require("../models/index");
 const getProject = async (req, res) => {
   try {
     const allProject = await models.project.findAll();
-    const projects = allProject;
+    // const projects = allProject;
 
     res.send({
-      project: projects,
+      project: allProject,
     });
   } catch (error) {
     console.error(error);

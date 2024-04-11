@@ -31,10 +31,13 @@ pool
 
 const models = {};
 const ProjectManager = require("./projectManager");
+const FormationManager = require("./formationManager");
 
 models.project = new ProjectManager();
+models.formation = new FormationManager();
 
 models.project.setDatabase(pool);
+models.formation.setDatabase(pool);
 
 // bonus: use a proxy to personalize error message,
 // when asking for a non existing model
