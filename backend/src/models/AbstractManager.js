@@ -1,5 +1,5 @@
 // Import database client
-const database = require("../../database/client");
+const database = require("./index");
 // Provide database access through AbstractManager class
 class AbstractManager {
   constructor({ table }) {

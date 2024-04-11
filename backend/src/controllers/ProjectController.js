@@ -1,4 +1,18 @@
-const models = require("../tables");
+const models = require("../models/index");
+
+const getProject = async (req, res) => {
+  try {
+    const allProject = await models.project.findAll();
+    const projects = allProject;
+
+    res.send({
+      project: projects,
+    });
+  } catch (error) {
+    console.error(error);
+    res.status(422).send({ error: err.message });
+  }
+};
 
 const getProjectByName = async (req, res) => {
   try {
@@ -20,5 +34,6 @@ const getProjectByName = async (req, res) => {
 };
 
 module.exports = {
+  getProject,
   getProjectByName,
 };

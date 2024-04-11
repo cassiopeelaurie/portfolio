@@ -1,10 +1,12 @@
-const express = require("express");
+// Load environment variables from .env file
 require("dotenv").config();
 
-const app = express();
+// Import the Express application from src/app.js
+const app = require("./src/app");
 
+// Get the port from the environment variables
 const port = process.env.APP_PORT;
-
+// Start the server and listen on the specified port
 const server = app
   .listen(port, () => {
     console.info(`Server is listening on port ${port}`);
