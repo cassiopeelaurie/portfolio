@@ -11,6 +11,7 @@ const hardSkillController = require("./controllers/hardSkillController");
 
 router.get("/project/:name", projectController.getProjectByName);
 router.get("/projects", projectController.getProject);
+router.get("/projects-skills/:id", projectController.getProjectSkills);
 
 //FORMATIONS
 
