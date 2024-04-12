@@ -33,7 +33,25 @@ const getProjectByName = async (req, res) => {
   }
 };
 
+const getProjectSkills = async (req, res) => {
+  try {
+    const id = req.params.id;
+
+    const projectInfo = await models.project.getProjectSkills(id);
+
+    const projectData = projectInfo[0];
+
+    res.send({
+      project: projectData,
+    });
+  } catch (err) {
+    console.error(err);
+    res.status(422).send({ error: err.message });
+  }
+};
+
 module.exports = {
   getProject,
   getProjectByName,
+  getProjectSkills,
 };
