@@ -4,7 +4,7 @@ const getAllTools = async (req, res) => {
   try {
     const tools = await models.tool.findAll();
 
-    res.send({
+    res.json({
       tools,
     });
   } catch (error) {

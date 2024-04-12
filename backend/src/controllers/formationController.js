@@ -4,7 +4,7 @@ const getFormation = async (req, res) => {
   try {
     const formation = await models.formation.findAll();
 
-    res.send({
+    res.json({
       formation,
     });
   } catch (error) {

@@ -4,7 +4,7 @@ const getAllSkills = async (req, res) => {
   try {
     const skills = await models.hard_skill.findAll();
 
-    res.send({
+    res.json({
       skills,
     });
   } catch (error) {
