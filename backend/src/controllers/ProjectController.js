@@ -5,7 +5,7 @@ const getProject = async (req, res) => {
     const allProject = await models.project.findAll();
     // const projects = allProject;
 
-    res.send({
+    res.json({
       project: allProject,
     });
   } catch (error) {
@@ -24,7 +24,7 @@ const getProjectByName = async (req, res) => {
     const projectData = projectInfo[0];
 
     // Envoyer les informations du projet en réponse
-    res.send({
+    res.json({
       project: projectData,
     });
   } catch (err) {
@@ -41,7 +41,7 @@ const getProjectSkills = async (req, res) => {
 
     const projectData = projectInfo[0];
 
-    res.send({
+    res.json({
       project: projectData,
     });
   } catch (err) {
