@@ -11,9 +11,8 @@ export default function SelectedWork() {
     // Définissez une fonction pour récupérer les données du projet
     const fetchProjectSkills = async () => {
       try {
-        const response = await axios.get("/projects-skills/4");
-        console.log(response.data);
-        setProjectSkills(response.data.project[0]); // Mettez à jour l'état avec les données de la réponse
+        const response = await axios.get("/api/projects-skills/4");
+        setProjectSkills(response.data); // Mettez à jour l'état avec les données de la réponse
       } catch (error) {
         console.error("Error fetching project skills:", error);
       }
