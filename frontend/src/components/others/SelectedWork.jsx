@@ -5,14 +5,16 @@ import ViewButton from "../buttons/ViewButton";
 import Learn from "../../assets/learn-home.jpg";
 
 export default function SelectedWork() {
-  const [projectSkills, setProjectSkills] = useState([]);
+  const [projectSkills, setProjectSkills] = useState({});
 
   useEffect(() => {
     // Définissez une fonction pour récupérer les données du projet
     const fetchProjectSkills = async () => {
       try {
-        const response = await axios.get("/api/projects-skills/4");
-        setProjectSkills(response.data); // Mettez à jour l'état avec les données de la réponse
+        const response = await axios.get(
+          "http://localhost:3310/api/projects-skills/4"
+        );
+        setProjectSkills(response.data.project[0]); // Mettez à jour l'état avec les données de la réponse
       } catch (error) {
         console.error("Error fetching project skills:", error);
       }
