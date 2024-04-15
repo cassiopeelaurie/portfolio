@@ -1,0 +1,33 @@
+.title-container {
+  height: 55vh;
+  background-color: var(--main-background-color);
+  padding-top: 5px;
+}
+
+.title-project-detail {
+  display: flex;
+  font-size: 45px;
+  height: 45vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-section {
+  margin-bottom: 20px;
+  margin-top: 50px; /* Espacement entre chaque section */
+}
+
+.description-projet {
+  margin-bottom: 20px;
+  margin-top: 30px; /* Espacement sous le paragraphe de description */
+}
+
+.liens {
+  margin-top: 40px;
+}
