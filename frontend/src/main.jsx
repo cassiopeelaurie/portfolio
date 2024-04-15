@@ -5,6 +5,7 @@ import App from "./App.jsx";
 import Home from "./pages/Home.jsx";
 import AllProjects from "./pages/AllProjects.jsx";
 import LearnAboutMe from "./pages/LearnAboutMe.jsx";
+import ProjectDetails from "./pages/ProjectDetails.jsx";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: "/all-project",
         element: <AllProjects />,
+      },
+      {
+        path: "/project-details",
+        element: <ProjectDetails />,
       },
       {
         path: "/about-me",
