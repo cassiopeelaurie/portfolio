@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { useHistory } from "react-router-dom";
-import ProjectsCards from "../components/cards/ProjectsCard";
+import { useNavigate } from "react-router-dom";
+import ProjectsCard from "../components/cards/ProjectsCard";
 import "./allprojects.css";
 
 export default function AllProjects() {
-  const history = useHistory();
+  const navigate = useNavigate();
   const [projectTitles, setProjectTitles] = useState([]);
 
   const handleClick = (projectId) => {
-    history.push(`/projects/${projectId}`);
+    navigate(`/project-details/${projectId}`);
   };
 
   useEffect(() => {
@@ -32,12 +32,12 @@ export default function AllProjects() {
       <div className="title-and-cards">
         <div className="all-projects-cards">
           {projectTitles.map((project, index) => (
-            <ProjectsCards key={index} projectName={project.name} />
+            <ProjectsCard
+              key={index}
+              projectName={project.name}
+              onClick={() => handleClick(project.id)}
+            />
           ))}
-          <div onClick={() => handleClick(projectId)}>Project 1</div>
-          <div onClick={() => handleClick(projectId)}>Project 2</div>
-          <div onClick={() => handleClick(projectId)}>Project 3</div>
-          <div onClick={() => handleClick(projectId)}>Project 4</div>
         </div>
       </div>
     </div>

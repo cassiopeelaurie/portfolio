@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import "./project-details.css";
 import { useParams } from "react-router-dom";
 
@@ -25,7 +26,7 @@ export default function ProjectDetails() {
   return (
     <div className="project-details-page-container">
       <div className="title-container">
-        <h1 className="title-project-detail">{projectDetails.title}</h1>
+        <h1 className="title-project-detail">{projectDetails.name}</h1>
       </div>
       <div className="project-details">
         <div className="project-section">
