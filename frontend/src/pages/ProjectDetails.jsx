@@ -1,23 +1,38 @@
 import React from "react";
 import "./project-details.css";
+import { useParams } from "react-router-dom";
 
 export default function ProjectDetails() {
+  const { id } = useParams();
+  const [projectDetails, setProjectDetails] = useState({});
+
+  useEffect(() => {
+    // Définissez une fonction pour récupérer les données du projet
+    const fetchProjectDetails = async () => {
+      try {
+        const response = await axios.get(
+          "http://localhost:3310/api/projects-skills/${id}"
+        );
+        setProjectDetails(response.data.project[0]); // Mettez à jour l'état avec les données de la réponse
+      } catch (error) {
+        console.error("Error fetching project skills:", error);
+      }
+    };
+
+    fetchProjectDetails(); // Appelez la fonction pour récupérer les données du projet
+  }, [id]);
+
   return (
     <div className="project-details-page-container">
       <div className="title-container">
-        <h1 className="title-project-detail">TITLE</h1>
+        <h1 className="title-project-detail">{projectDetails.title}</h1>
       </div>
       <div className="project-details">
         <div className="project-section">
           <img src="coucou" alt="photo-project-1" />
         </div>
         <div className="project-section">
-          <p className="description-projet">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Consequatur atque voluptatibus quisquam velit deserunt veritatis
-            laudantium, illum non vitae pariatur magnam, voluptatum, quia libero
-            repudiandae. Fugiat, dolorem blanditiis! Modi, quas?
-          </p>
+          <p className="description-projet">{projectDetails.description}</p>
         </div>
         <div className="project-section">
           <img src="coucouu" alt="photo-project-2" />
