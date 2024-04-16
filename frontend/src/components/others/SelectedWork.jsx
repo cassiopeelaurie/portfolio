@@ -1,11 +1,17 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 import "./selectedWork.css";
 import ViewButton from "../buttons/ViewButton";
 import Learn from "../../assets/learn-home.jpg";
 
 export default function SelectedWork() {
+  const navigate = useNavigate();
   const [projectSkills, setProjectSkills] = useState({});
+
+  const handleClickProject = () => {
+    navigate(`/project-details/4`);
+  };
 
   useEffect(() => {
     // Définissez une fonction pour récupérer les données du projet
@@ -38,6 +44,7 @@ export default function SelectedWork() {
           <ViewButton
             className="button-project-responsive"
             buttonName="View Project"
+            onClick={handleClickProject}
           />
         </div>
       </div>
