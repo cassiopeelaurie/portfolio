@@ -43,7 +43,7 @@ ALTER TABLE project ADD COLUMN images VARCHAR(255);
 
 UPDATE project
 SET
-    images = 'img projets portfolio/Wild Eats 1.png, img projets portfolio/Wild Eats 2.png, img projets portfolio/Wild Eats 3.png, img projets portfolio/Wild Eats 4.png, img projets portfolio/Wild Eats 5.png'
+    images = 'frontend / src / assets / img projets portfolio / Wild Eats 1.png'
 WHERE
     id = 1;
 

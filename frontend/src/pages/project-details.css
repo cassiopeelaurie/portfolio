@@ -22,6 +22,9 @@
   margin-bottom: 20px;
   margin-top: 50px; /* Espacement entre chaque section */
 }
+.project-section img {
+  width: 100%;
+}
 
 .description-projet {
   margin-bottom: 20px;

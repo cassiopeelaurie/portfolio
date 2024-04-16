@@ -39,8 +39,9 @@ export default function SelectedWork() {
         <div>
           <h3 className="title-selected-project">{projectSkills.name}</h3>
           <p className="description-selected-project">
-            {projectSkills.description} {projectSkills.skills}
+            {projectSkills.description}
           </p>
+          <p className="hard-skills-selected-work"> {projectSkills.skills}</p>
           <ViewButton
             className="button-project-responsive"
             buttonName="View Project"
