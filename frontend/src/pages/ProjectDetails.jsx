@@ -12,9 +12,10 @@ export default function ProjectDetails() {
     const fetchProjectDetails = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:3310/api/projects-skills/${id}"
+          `http://localhost:3310/api/projects-skills/${id}`
         );
-        setProjectDetails(response.data.project[0]); // Mettez à jour l'état avec les données de la réponse
+        setProjectDetails(response.data.project[0]);
+        window.scrollTo(0, 0);
       } catch (error) {
         console.error("Error fetching project skills:", error);
       }
