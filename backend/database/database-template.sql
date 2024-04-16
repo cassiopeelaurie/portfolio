@@ -39,6 +39,14 @@ VALUES (
         'Externatic', 'Quatrième description de projet'
     );
 
+ALTER TABLE project ADD COLUMN images VARCHAR(255);
+
+UPDATE project
+SET
+    images = 'img projets portfolio/Wild Eats 1.png, img projets portfolio/Wild Eats 2.png, img projets portfolio/Wild Eats 3.png, img projets portfolio/Wild Eats 4.png, img projets portfolio/Wild Eats 5.png'
+WHERE
+    id = 1;
+
 create TABLE project_skill (
     project_id int, skill_id int, FOREIGN KEY (project_id) REFERENCES project (id), FOREIGN KEY (skill_id) REFERENCES skill (id)
 );
