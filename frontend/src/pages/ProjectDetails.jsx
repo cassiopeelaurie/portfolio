@@ -84,7 +84,11 @@ export default function ProjectDetails() {
       <div className="project-details">
         {projectImages.map((image, index) => (
           <div key={index} className="project-section">
-            <img src={image} alt={`photo-project-${index + 1}`} />
+            <img
+              src={image}
+              alt={`photo-project-${index + 1}`}
+              className="project-image"
+            />
           </div>
         ))}
       </div>
