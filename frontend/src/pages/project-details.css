@@ -35,6 +35,18 @@
   margin-top: 30px;
 }
 
+.comp-section {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.competence-text {
+  font-size: 18px;
+  margin-top: 30px;
+}
+
 .liens {
   margin-top: 40px;
 }

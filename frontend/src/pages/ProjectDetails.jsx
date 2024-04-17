@@ -46,6 +46,15 @@ export default function ProjectDetails() {
     fetchProjectDetails(); // Appelez la fonction pour récupérer les données du projet
   }, [id]);
 
+  // Fonction pour traiter les compétences
+  const formatSkills = (skills) => {
+    if (skills) {
+      return skills.split(",").map((skill) => skill.trim());
+    } else {
+      return [];
+    }
+  };
+
   const getProjectImagesById = (projectId) => {
     switch (projectId) {
       case "2":
@@ -80,6 +89,15 @@ export default function ProjectDetails() {
       </div>
       <div className="project-section">
         <p className="description-projet">{projectDetails.description}</p>
+      </div>
+      <div className="comp-section">
+        <p className="competence-text">
+          {formatSkills(projectDetails.skills).map((skill, index) => (
+            <span key={index} className="skill-bubble">
+              {skill}
+            </span>
+          ))}
+        </p>
       </div>
       <div className="project-details">
         {projectImages.map((image, index) => (
