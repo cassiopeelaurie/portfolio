@@ -1,9 +1,38 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import "./learnAboutMe.css";
 import AboutCards from "../components/cards/AboutCards";
 import Pdp from "../assets/pdp.jpg";
 
 export default function LearnAboutMe() {
+  const [formations, setFormations] = useState([]);
+  const [tools, setTools] = useState([]);
+  const [hardSkills, setHardSkills] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const formationsResponse = await axios.get(
+          "http://localhost:3310/api/formations"
+        );
+        const toolsResponse = await axios.get(
+          "http://localhost:3310/api/tools"
+        );
+        const hardSkillsResponse = await axios.get(
+          "http://localhost:3310/api/hard-skills"
+        );
+
+        setFormations(formationsResponse.data.formation[0]);
+        setTools(toolsResponse.data.tools);
+        setHardSkills(hardSkillsResponse.data.skills);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <div className="learn-about-me-container">
       <div className="div-responsive-about-me">
@@ -18,9 +47,25 @@ export default function LearnAboutMe() {
       </div>
       <div className="width-pages-des-cards">
         <div className="three-cards">
-          <AboutCards NameCards="Formations" className="formation-card" />
-          <AboutCards NameCards="Hard Skills" className="the-other-side-card" />
-          <AboutCards NameCards="Outils" className="outils-card" />
+          <AboutCards
+            NameCards="Formations"
+            className="formation-card"
+            textCards={formations.description}
+          />
+          <AboutCards
+            NameCards="Hard Skills"
+            className="the-other-side-card"
+            textCards={hardSkills.map((skill, index) => (
+              <div key={index}>{skill.name}</div>
+            ))}
+          />
+          <AboutCards
+            NameCards="Outils"
+            className="outils-card"
+            textCards={tools.map((tool, index) => (
+              <div key={index}>{tool.name}</div>
+            ))}
+          />
         </div>
       </div>
     </div>
