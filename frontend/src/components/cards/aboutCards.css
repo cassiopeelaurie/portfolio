@@ -1,13 +1,31 @@
 .about-cards-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  height: 24vh;
-  margin: 30px 55px;
+  align-items: center;
+  height: auto;
+  margin: 30px 40px;
+  padding: 20px;
   width: 70%;
   background-color: rgb(247, 200, 200);
   border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .name-cards {
   font-family: var(--police-general);
-  font-size: 20px;
+  font-size: 25px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.text-cards-container {
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.text-cards {
+  margin-bottom: 10px;
 }
