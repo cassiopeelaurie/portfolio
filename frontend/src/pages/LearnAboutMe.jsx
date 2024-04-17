@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./learnAboutMe.css";
 import AboutCards from "../components/cards/AboutCards";
-import Pdp from "../assets/pdp.jpg";
+import Pdp from "../assets/pdp.png";
 
 export default function LearnAboutMe() {
   const [formations, setFormations] = useState([]);

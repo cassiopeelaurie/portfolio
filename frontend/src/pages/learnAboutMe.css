@@ -3,6 +3,7 @@
   height: 100%;
   padding-bottom: 30px;
 }
+
 .name-header-container {
   width: 100%;
   justify-content: center;
@@ -31,8 +32,23 @@
 }
 
 .img-pdp {
-  width: 70%;
-  height: 70%;
+  width: 50%;
+  height: 60%;
+  border-radius: 15px;
+}
+
+.formation-card,
+.the-other-side-card,
+.outils-card {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formation-card {
+  font-size: 12px;
 }
 
 @media screen and (min-width: 768px) {
