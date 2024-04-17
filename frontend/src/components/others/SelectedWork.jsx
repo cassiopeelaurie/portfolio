@@ -13,8 +13,13 @@ export default function SelectedWork() {
     navigate(`/project-details/4`);
   };
 
+  // Fonction pour traiter les compétences
   const formatSkills = (skills) => {
-    return skills.split(",").map((skill) => skill.trim());
+    if (skills) {
+      return skills.split(",").map((skill) => skill.trim());
+    } else {
+      return [];
+    }
   };
 
   useEffect(() => {

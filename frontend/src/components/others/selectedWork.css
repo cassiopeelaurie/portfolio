@@ -18,16 +18,14 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-}
-
-.img-selected-project {
   width: 100%;
   padding-top: 2vh;
   padding-bottom: 2vh;
 }
 
 .img-project {
-  width: 80%;
+  width: 90%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 .title-selected-project {

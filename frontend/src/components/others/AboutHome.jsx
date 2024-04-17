@@ -1,5 +1,5 @@
 import React from "react";
-import Learn from "../../assets/learn-home.jpg";
+import Learn from "../../assets/learn-home.avif";
 import ViewButton from "../buttons/ViewButton";
 import { useNavigate } from "react-router-dom";
 import "./aboutHome.css";
