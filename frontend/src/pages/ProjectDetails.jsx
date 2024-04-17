@@ -87,12 +87,6 @@ export default function ProjectDetails() {
             <img src={image} alt={`photo-project-${index + 1}`} />
           </div>
         ))}
-        <div className="project-section">
-          <p className="liens">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque,
-            dolorem.
-          </p>
-        </div>
       </div>
     </div>
   );

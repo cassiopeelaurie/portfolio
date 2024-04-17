@@ -41,6 +41,10 @@ VALUES (
 
 ALTER TABLE project ADD COLUMN images VARCHAR(255);
 
+ALTER TABLE project DROP COLUMN images;
+
+ALTER TABLE project MODIFY COLUMN description VARCHAR(500);
+
 UPDATE project
 SET
     images = 'frontend / src / assets / img projets portfolio / Wild Eats 1.png'

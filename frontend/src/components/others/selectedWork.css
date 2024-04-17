@@ -18,16 +18,14 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-}
-
-.img-selected-project {
   width: 100%;
   padding-top: 2vh;
   padding-bottom: 2vh;
 }
 
 .img-project {
-  width: 80%;
+  width: 90%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 .title-selected-project {
@@ -42,11 +40,22 @@
   margin-bottom: -30px;
 }
 
-.hard-skills-selected-work {
-  font-size: 15px;
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
+.skill-bubble {
+  display: inline-block;
+  background-color: var(--main-background-color);
+  color: #333;
+  padding: 4px 8px;
+  border-radius: 16px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  font-size: 17px;
+}
+
+.skills-container {
+  padding-top: 40px;
+  margin-left: 88px;
+  width: 70%;
+  margin-top: 12px;
 }
 
 h3 {
