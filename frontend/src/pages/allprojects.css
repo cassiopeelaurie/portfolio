@@ -14,8 +14,9 @@
   .all-projects-cards {
     display: flex;
     justify-content: center;
-  }
-  .all-projects-cards {
     width: 100%;
+  }
+  .all-projects-cards:hover {
+    cursor: pointer;
   }
 }
