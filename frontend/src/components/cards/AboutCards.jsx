@@ -9,7 +9,13 @@ export default function AboutCards({ NameCards, className, textCards }) {
       </div>
       <div className="text-cards-container">
         {typeof textCards === "string" ? (
-          <p className="text-cards">{textCards}</p>
+          <p
+            className={`text-cards ${
+              className === "formation-card" ? "text-small" : ""
+            }`}
+          >
+            {textCards}
+          </p>
         ) : (
           <div className="text-cards">{textCards}</div>
         )}
