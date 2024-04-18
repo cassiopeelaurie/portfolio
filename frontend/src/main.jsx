@@ -1,9 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Home from "./pages/Home.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.jsx";
-import "./index.css";
+import Home from "./pages/Home.jsx";
+import AllProjects from "./pages/AllProjects.jsx";
+import LearnAboutMe from "./pages/LearnAboutMe.jsx";
+import ProjectDetails from "./pages/ProjectDetails.jsx";
 
 const router = createBrowserRouter([
   {
@@ -14,14 +16,26 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home />,
       },
+      {
+        path: "/all-project",
+        element: <AllProjects />,
+      },
+      {
+        path: "/project-details/:id",
+        element: <ProjectDetails />,
+      },
+      {
+        path: "/about-me",
+        element: <LearnAboutMe />,
+      },
     ],
   },
 ]);
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-
-root.render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <RouterProvider router={router}>
+      <App />
+    </RouterProvider>
   </React.StrictMode>
 );
