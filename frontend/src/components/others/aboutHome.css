@@ -39,8 +39,8 @@ h1 {
 @media screen and (min-width: 768px) {
   .about-home-container {
     display: flex;
-    padding-top: 25vh;
-    padding-bottom: 150px;
+    padding-top: 8.5vh;
+    padding-bottom: 140px;
   }
   .div-desktop-responsive {
     display: block;
