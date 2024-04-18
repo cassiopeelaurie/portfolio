@@ -39,6 +39,15 @@ export default function LearnAboutMe() {
         <div className="name-header-container">
           <div className="name-text">
             <h1 className="name-header">Cassiopée Laurie</h1>
+            <div className="cv-container">
+              <a
+                className="CV"
+                href="../assets/Cassiopée Laurie CV.pdf"
+                download="Cassiopée Laurie CV.pdf"
+              >
+                Télécharger le CV
+              </a>
+            </div>
           </div>
         </div>
         <div className="img-profile-page">

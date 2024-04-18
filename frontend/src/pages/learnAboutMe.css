@@ -102,4 +102,14 @@
     margin-left: -130px;
     height: 30vh;
   }
+
+  .cv-container {
+    width: 25%;
+    margin-left: -568px;
+    margin-top: 320px;
+  }
+
+  .CV {
+    margin-top: 20px;
+  }
 }
