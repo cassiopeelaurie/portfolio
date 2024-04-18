@@ -56,3 +56,17 @@
   width: 100%;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
+
+@media screen and (min-width: 768px) {
+  .description-projet {
+    font-size: 20px;
+    margin-left: 220px;
+    width: 70%;
+  }
+  .project-image {
+    max-width: 1150px;
+    width: 100%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+  }
+}
