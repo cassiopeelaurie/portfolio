@@ -9,7 +9,7 @@
 }
 
 .logo-img-footer {
-  width: 5vh;
+  width: 10vh;
 }
 
 .contacts {
@@ -41,4 +41,31 @@ p {
 
 img {
   width: 30%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    height: 30vh;
+    align-items: center;
+  }
+  .bloc-1 {
+    width: 30%;
+  }
+  .contacts {
+    width: 45%;
+  }
+  p {
+    padding-top: 20px;
+  }
+  .qr-code-github {
+    width: 385px;
+    margin-top: -20px;
+    padding-right: 30px;
+  }
 }

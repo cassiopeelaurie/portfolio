@@ -1,0 +1,22 @@
+.all-projects-container {
+  padding-top: 5px;
+  padding-bottom: 50px;
+  background-color: var(--second-background-color);
+}
+
+.title-all-projects {
+  display: flex;
+  justify-content: center;
+  font-size: 37px;
+}
+
+@media screen and (min-width: 765px) {
+  .all-projects-cards {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .all-projects-cards:hover {
+    cursor: pointer;
+  }
+}

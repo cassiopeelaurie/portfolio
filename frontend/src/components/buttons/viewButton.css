@@ -1,13 +1,16 @@
 .button-view-container {
   display: flex;
   justify-content: center;
+  margin-top: 35px;
 }
 
 .button-view {
-  background-color: rgb(255, 64, 0);
-  width: 38%;
-  font-size: 18px;
-  border-radius: 15px;
+  border: none;
+  background-color: rgb(227, 38, 0);
+  width: 34%;
+  font-size: 19px;
+  letter-spacing: 0.5px;
+  border-radius: 12px;
   font-family: var(--police-general);
   padding: 10px 0;
 }
@@ -16,7 +19,8 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 40px 0;
+  margin-top: 55px;
+  margin-bottom: 15px;
 }
 
 .img-home {

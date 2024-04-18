@@ -6,7 +6,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
+  position: relative;
   background-color: var(--second-background-color);
   width: 100%;
   top: 0;
@@ -14,7 +14,7 @@ body {
 }
 
 .logo-img {
-  width: 6.8vh;
+  width: 6vh;
   height: auto;
   margin-left: 45px;
 }
@@ -26,9 +26,30 @@ body {
   margin-top: 25px;
   justify-content: space-evenly;
   padding-bottom: 3.8vh;
-  font-size: 0.6vh;
+  font-size: 1vh;
 }
 
-h1 {
-  font-weight: normal;
+@media screen and (min-width: 768px) {
+  .logo-img {
+    width: 7.5vh;
+    height: auto;
+    margin-left: 75px;
+  }
+  .logo-img:hover {
+    cursor: pointer;
+  }
+
+  .titles {
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+    font-weight: lighter;
+    margin-top: 25px;
+    justify-content: space-evenly;
+    padding-bottom: 3.8vh;
+    font-size: 1.4vh;
+  }
+  .titles:hover {
+    cursor: pointer;
+  }
 }

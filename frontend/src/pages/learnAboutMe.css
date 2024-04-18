@@ -1,0 +1,105 @@
+.learn-about-me-container {
+  background-color: var(--second-background-color);
+  height: 100%;
+  padding-bottom: 30px;
+}
+
+.name-header-container {
+  width: 100%;
+  justify-content: center;
+  background-color: rgb(247, 200, 200);
+  height: 42vh;
+  margin-top: -50px;
+}
+
+.name-header {
+  display: flex;
+  justify-content: center;
+  padding-top: 55px;
+  padding-left: 80px;
+  font-family: var(--police-general);
+  font-size: 42px;
+  width: 80%;
+}
+
+.img-profile-page {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(231, 135, 135);
+  height: 42vh;
+}
+
+.img-pdp {
+  width: 50%;
+  height: 60%;
+  border-radius: 15px;
+}
+
+.formation-card,
+.the-other-side-card,
+.outils-card {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formation-name {
+  font-weight: normal;
+  margin-top: -5px;
+  margin-bottom: -2px;
+  font-size: 18px;
+}
+
+.about-cards-container.the-other-side-card {
+  background-color: rgb(231, 135, 135);
+}
+
+@media screen and (min-width: 768px) {
+  .div-responsive-about-me {
+    display: flex;
+    margin-top: 50px;
+  }
+  .name-header-container {
+    height: 80vh;
+  }
+  .name-header {
+    font-size: 80px;
+  }
+  .name-text {
+    display: flex;
+    height: 40vh;
+    padding-top: 140px;
+  }
+  .img-profile-page {
+    height: 80vh;
+    margin-top: -50px;
+  }
+  .img-pdp {
+    width: 30%;
+    height: 40%;
+  }
+  .three-cards {
+    width: 50%;
+  }
+  .width-pages-des-cards {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .width-pages-des-cards .the-other-side-card {
+    margin-left: 300px;
+    height: 30vh;
+  }
+  .width-pages-des-cards .formation-card {
+    margin-left: -130px;
+    height: 30vh;
+  }
+  .width-pages-des-cards .outils-card {
+    margin-left: -130px;
+    height: 30vh;
+  }
+}
