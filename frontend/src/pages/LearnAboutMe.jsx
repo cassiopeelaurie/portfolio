@@ -42,7 +42,7 @@ export default function LearnAboutMe() {
           </div>
         </div>
         <div className="img-profile-page">
-          <img className="img-pdp" src={Pdp} alt="coucou" />
+          <img className="img-pdp" src={Pdp} alt="img-pdp" />
         </div>
       </div>
       <div className="width-pages-des-cards">
@@ -50,7 +50,12 @@ export default function LearnAboutMe() {
           <AboutCards
             NameCards="Formations"
             className="formation-card"
-            textCards={formations.description}
+            textCards={
+              <>
+                <h2 className="formation-name">{formations.name}</h2>
+                {formations.description}
+              </>
+            }
           />
           <AboutCards
             NameCards="Hard Skills"

@@ -29,3 +29,8 @@
 .text-cards {
   margin-bottom: 10px;
 }
+
+.text-small {
+  margin-top: 10px;
+  font-size: 16px;
+}
