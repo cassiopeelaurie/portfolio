@@ -61,7 +61,7 @@
 @media screen and (min-width: 768px) {
   .div-responsive-about-me {
     display: flex;
-    margin-top: 150px;
+    margin-top: 50px;
   }
   .name-header-container {
     height: 80vh;
@@ -79,10 +79,11 @@
     margin-top: -50px;
   }
   .img-pdp {
-    width: 60%;
+    width: 30%;
+    height: 40%;
   }
   .three-cards {
-    width: 60%;
+    width: 50%;
   }
   .width-pages-des-cards {
     display: flex;
@@ -90,13 +91,15 @@
     width: 100%;
   }
   .width-pages-des-cards .the-other-side-card {
-    margin-left: 350px;
-    height: 50vh;
+    margin-left: 300px;
+    height: 30vh;
   }
   .width-pages-des-cards .formation-card {
-    height: 50vh;
+    margin-left: -130px;
+    height: 30vh;
   }
   .width-pages-des-cards .outils-card {
-    height: 50vh;
+    margin-left: -130px;
+    height: 30vh;
   }
 }
