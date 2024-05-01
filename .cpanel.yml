@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/cassiopeelaurie/portfolio
-    - rsync -av --exclude='.git' --exclude='.cpanel.yml' --exclude='node_modules' --exclude='*.log' . $DEPLOYPATH
+    - export DEPLOYPATH=/home/cassiopeelaurie/public_html
+    - /bin/cp -r * $DEPLOYPATH
