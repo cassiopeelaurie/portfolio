@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/cassiopeelaurie/portfolio
+    - export DEPLOYPATH="/home/cassiopeelaurie/Wild Code School/dev/projets perso/portfolio v2"
     - /bin/cp -r * $DEPLOYPATH
