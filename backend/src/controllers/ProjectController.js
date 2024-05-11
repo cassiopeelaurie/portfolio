@@ -3,7 +3,6 @@ const models = require("../models/index");
 const getProject = async (req, res) => {
   try {
     const allProject = await models.project.findAll();
-    // const projects = allProject;
 
     res.json({
       project: allProject,
